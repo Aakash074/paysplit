@@ -1,9 +1,8 @@
 #pragma once
 
-#include <jsi/jsi.h>
-#include <memory>
-#include <unordered_map>
 #include <vector>
+#include <unordered_map>
+#include <jsi/jsi.h>
 
 using namespace facebook;
 
@@ -17,7 +16,7 @@ class MapperRegistry {
   void updateOrder();
   bool updatedSinceLastExecute = false;
 
- public:
+public:
   void startMapper(std::shared_ptr<Mapper> mapper);
   void stopMapper(unsigned long id);
 
@@ -26,4 +25,4 @@ class MapperRegistry {
   bool needRunOnRender();
 };
 
-} // namespace reanimated
+}

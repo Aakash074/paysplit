@@ -4,7 +4,7 @@
             "outputFile": "/Users/aakashkumar/Desktop/paysplit/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/eebedfd6526cd5539e0a44e6886856e3/core-1.5.0/res/values-sv/values-sv.xml",
+                    "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/d67cd79abd1ca209502f51c69d23182b/core-1.1.0/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

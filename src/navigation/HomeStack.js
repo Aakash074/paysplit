@@ -2,6 +2,8 @@ import React from 'react';
 import {IconButton} from 'react-native-paper';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
+import QRcode from '../screens/QRcode';
+import UPIpay from '../screens/UPIpay';
 import AddRoomScreen from '../screens/AddRoomScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -12,7 +14,7 @@ export default function HomeStack() {
     <Stack.Navigator>
       <Stack.Screen
         name="SplitPay"
-        component={HomeScreen}
+        component={UPIpay}
         options={({navigation}) => ({
           headerLeft: () => <IconButton icon="menu" size={22} />,
           headerRight: () => (

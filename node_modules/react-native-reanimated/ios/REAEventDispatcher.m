@@ -1,17 +1,17 @@
 #import "REAEventDispatcher.h"
-#import <RNReanimated/REAModule.h>
-#import <React/RCTBridge+Private.h>
 #import <React/RCTDefines.h>
+#import <React/RCTBridge+Private.h>
+#import <RNReanimated/REAModule.h>
 
 @implementation REAEventDispatcher
 
 - (void)sendEvent:(id<RCTEvent>)event
 {
-  [[[self bridge] moduleForName:@"ReanimatedModule"] eventDispatcherWillDispatchEvent:event];
+  [[_bridge_reanimated moduleForName:@"ReanimatedModule"] eventDispatcherWillDispatchEvent:event];
   [super sendEvent:event];
 }
 
-+ (NSString *)moduleName
++ (NSString*)moduleName
 {
   return NSStringFromClass([RCTEventDispatcher class]);
 }
