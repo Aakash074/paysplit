@@ -16,7 +16,7 @@ export default function HomeStack() {
         options={({navigation}) => ({
           headerLeft: () => <IconButton icon="menu" size={22} />,
           headerRight: () => (
-            <IconButton icon={() => <Icon name="search" size={22}></Icon>} />
+            <IconButton icon={() => <Icon name="qr-code-outline" size={22}></Icon>} />
           ),
         })}
       />

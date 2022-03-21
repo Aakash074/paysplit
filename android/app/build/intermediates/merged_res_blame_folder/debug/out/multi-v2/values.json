@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aakashkumar/Desktop/SplitPay/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/aakashkumar/Desktop/paysplit/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/8850ed829d25245e8497182323bc73d2/jetified-drawee-2.2.0/res/values/values.xml",
@@ -61,22 +61,20 @@
                     }
                 },
                 {
-                    "source": "/Users/aakashkumar/Desktop/SplitPay/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/aakashkumar/Desktop/paysplit/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "234"
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
                     },
                     "to": {
-                        "startLines": "808",
-                        "startColumns": "4",
-                        "startOffsets": "58935",
-                        "endLines": "811",
-                        "endColumns": "12",
-                        "endOffsets": "59115"
+                        "startLines": "642,643",
+                        "startColumns": "4,4",
+                        "startOffsets": "40947,41011",
+                        "endColumns": "63,68",
+                        "endOffsets": "41006,41075"
                     }
                 },
                 {
@@ -99,23 +97,6 @@
                     }
                 },
                 {
-                    "source": "/Users/aakashkumar/Desktop/SplitPay/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "45",
-                        "endOffsets": "57"
-                    },
-                    "to": {
-                        "startLines": "678",
-                        "startColumns": "4",
-                        "startOffsets": "43466",
-                        "endColumns": "45",
-                        "endOffsets": "43507"
-                    }
-                },
-                {
                     "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/5e5754defa7ec1b661ffd11a17838c67/fragment-1.2.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,9",
@@ -132,6 +113,23 @@
                         "endLines": "575,622,5873,5877",
                         "endColumns": "56,63,24,24",
                         "endOffsets": "37391,39756,377281,377430"
+                    }
+                },
+                {
+                    "source": "/Users/aakashkumar/Desktop/paysplit/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "45",
+                        "endOffsets": "57"
+                    },
+                    "to": {
+                        "startLines": "678",
+                        "startColumns": "4",
+                        "startOffsets": "43466",
+                        "endColumns": "45",
+                        "endOffsets": "43507"
                     }
                 },
                 {
@@ -209,6 +207,25 @@
                     }
                 },
                 {
+                    "source": "/Users/aakashkumar/Desktop/paysplit/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "234"
+                    },
+                    "to": {
+                        "startLines": "808",
+                        "startColumns": "4",
+                        "startOffsets": "58935",
+                        "endLines": "811",
+                        "endColumns": "12",
+                        "endOffsets": "59115"
+                    }
+                },
+                {
                     "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f48ad73390f9d41c4966ce25bccc3bb7/jetified-react-native-0.64.2/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,74,78,81,84,88,92,95,98,99,100,109,116,123,126,129,132,138",
@@ -225,23 +242,6 @@
                         "endLines": "113,114,531,564,565,566,567,568,588,620,621,677,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,716,721,724,725,726,727,728,729,769,770,771,772,773,775,776,777,778,779,780,781,783,784,785,786,795,799,2641,2644,2656,2660,2993,2996,3232,3262,3271,3278,3307,3310,3313,3413,3419,4359",
                         "endColumns": "62,62,50,47,48,47,48,48,42,53,47,72,74,122,95,88,107,116,119,119,101,102,110,106,102,110,168,167,116,103,112,155,107,112,90,110,168,97,126,124,94,106,79,75,72,86,70,70,77,79,85,83,71,81,80,83,76,86,84,78,74,72,76,77,72,77,10,10,12,12,10,10,12,12,25,34,10,10,10,10,10,12,12,10",
                         "endOffsets": "6985,7048,34850,36808,36857,36905,36954,37003,38006,39644,39692,43461,43863,43986,44082,44171,44279,44396,44516,44636,44738,44841,44952,45059,45162,45273,45442,45610,45727,45831,45944,46100,46208,46321,46412,46523,46692,46790,46917,47042,47137,47244,47751,48295,48675,48762,48833,48904,48982,49062,56121,56205,56277,56359,56440,56577,56654,56741,56826,56905,56980,57053,57201,57279,57352,57430,58120,58368,178117,178308,178828,179034,201741,201930,218608,220799,221337,221755,223275,223452,223631,231876,232241,293239"
-                    }
-                },
-                {
-                    "source": "/Users/aakashkumar/Desktop/SplitPay/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
-                    },
-                    "to": {
-                        "startLines": "642,643",
-                        "startColumns": "4,4",
-                        "startOffsets": "40947,41011",
-                        "endColumns": "63,68",
-                        "endOffsets": "41006,41075"
                     }
                 },
                 {

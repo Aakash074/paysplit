@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aakashkumar/Desktop/SplitPay/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
+            "outputFile": "/Users/aakashkumar/Desktop/paysplit/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/eebedfd6526cd5539e0a44e6886856e3/core-1.5.0/res/values-sq/values-sq.xml",
