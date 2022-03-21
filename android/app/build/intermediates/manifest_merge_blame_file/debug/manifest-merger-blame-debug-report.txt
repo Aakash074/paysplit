@@ -17,55 +17,172 @@
 13    <uses-permission android:name="android.permission.CAMERA" />
 13-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:5:5-65
 13-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:5:22-62
-14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-14-->[com.facebook.flipper:flipper:0.75.1] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
-14-->[com.facebook.flipper:flipper:0.75.1] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
-15
-16    <application
-16-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:8:5-26:19
-17        android:name="com.splitpay.MainApplication"
-17-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:9:7-38
-18        android:allowBackup="false"
-18-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:13:7-34
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/d67cd79abd1ca209502f51c69d23182b/core-1.1.0/AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:11:7-41
-22        android:label="@string/app_name"
-22-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:10:7-39
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:12:7-52
-24        android:theme="@style/AppTheme"
-24-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:14:7-38
-25        android:usesCleartextTraffic="true" >
-25-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:8:9-44
-26        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-26-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:11:9-86
-26-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:11:19-83
-27        <activity
-27-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:15:7-25:18
-28            android:name="com.splitpay.MainActivity"
-28-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:16:9-37
-29            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-29-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:18:9-86
-30            android:label="@string/app_name"
-30-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:17:9-41
-31            android:launchMode="singleTask"
-31-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:19:9-40
-32            android:windowSoftInputMode="adjustResize" >
-32-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:20:9-51
-33            <intent-filter>
-33-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:21:9-24:25
-34                <action android:name="android.intent.action.MAIN" />
-34-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:22:13-65
-34-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:22:21-62
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:23:13-73
-36-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:23:23-70
-37            </intent-filter>
-38        </activity>
-39    </application>
-40
-41</manifest>
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:6:5-65
+14-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:6:22-63
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.75.1] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.75.1] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
+16
+17    <uses-feature
+17-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+18        android:name="android.hardware.camera"
+18-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+19        android:required="false" />
+19-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+20    <uses-feature
+20-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+21        android:name="android.hardware.camera.autofocus"
+21-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+22        android:required="false" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+22-->[:react-native-camera] /Users/aakashkumar/Desktop/paysplit/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+23    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+24-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+25
+26    <application
+26-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:9:5-27:19
+27        android:name="com.splitpay.MainApplication"
+27-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:10:7-38
+28        android:allowBackup="false"
+28-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:14:7-34
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.5.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/eebedfd6526cd5539e0a44e6886856e3/core-1.5.0/AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:12:7-41
+32        android:label="@string/app_name"
+32-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:11:7-39
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:13:7-52
+34        android:theme="@style/AppTheme"
+34-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:15:7-38
+35        android:usesCleartextTraffic="true" >
+35-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:8:9-44
+36        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+36-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:11:9-86
+36-->/Users/aakashkumar/Desktop/paysplit/android/app/src/debug/AndroidManifest.xml:11:19-83
+37        <activity
+37-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:16:7-26:18
+38            android:name="com.splitpay.MainActivity"
+38-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:17:9-37
+39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+39-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:19:9-86
+40            android:label="@string/app_name"
+40-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:18:9-41
+41            android:launchMode="singleTask"
+41-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:20:9-40
+42            android:windowSoftInputMode="adjustResize" >
+42-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:21:9-51
+43            <intent-filter>
+43-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:22:9-25:25
+44                <action android:name="android.intent.action.MAIN" />
+44-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:23:13-65
+44-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:23:21-62
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:24:13-73
+46-->/Users/aakashkumar/Desktop/paysplit/android/app/src/main/AndroidManifest.xml:24:23-70
+47            </intent-filter>
+48        </activity>
+49
+50        <service
+50-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:9:9-15:19
+51            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+51-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:10:13-91
+52            android:directBootAware="true"
+52-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:17:13-43
+53            android:exported="false" >
+53-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:11:13-37
+54            <meta-data
+54-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:12:13-14:85
+55                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+55-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:13:17-120
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f7ff6eb63aa1e3ea073666c14b514859/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:14:17-82
+57            <meta-data
+57-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f39df081e10057909138456416ab1dab/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+58                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+58-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f39df081e10057909138456416ab1dab/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/f39df081e10057909138456416ab1dab/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+60            <meta-data
+60-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/8a88aae300aa83d5c14da36774d8b531/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:12:13-14:85
+61                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+61-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/8a88aae300aa83d5c14da36774d8b531/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:13:17-114
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/8a88aae300aa83d5c14da36774d8b531/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:14:17-82
+63            <meta-data
+63-->[com.google.mlkit:vision-common:16.5.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/aba78458a93c9ceecd48b55ba2824cd6/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+64                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+64-->[com.google.mlkit:vision-common:16.5.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/aba78458a93c9ceecd48b55ba2824cd6/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.mlkit:vision-common:16.5.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/aba78458a93c9ceecd48b55ba2824cd6/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+66            <meta-data
+66-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:20:13-22:85
+67                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+67-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:21:17-120
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:22:17-82
+69        </service>
+70
+71        <provider
+71-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:9:9-13:38
+72            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+72-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:10:13-78
+73            android:authorities="com.splitpay.mlkitinitprovider"
+73-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:11:13-69
+74            android:exported="false"
+74-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:12:13-37
+75            android:initOrder="99" />
+75-->[com.google.mlkit:common:17.2.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/bf5e10dabc875cb66e2e82010209511a/jetified-common-17.2.0/AndroidManifest.xml:13:13-35
+76
+77        <service
+77-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+78            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+78-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+79            android:exported="false" >
+79-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+80            <meta-data
+80-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+81                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+81-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+82                android:value="cct" />
+82-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+83        </service>
+84        <service
+84-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+85            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+85-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+86            android:exported="false"
+86-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+87            android:permission="android.permission.BIND_JOB_SERVICE" >
+87-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+88        </service>
+89
+90        <receiver
+90-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+91            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+91-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+92            android:exported="false" />
+92-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/87ab190c9cd170b303c55045ac8519f5/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+93
+94        <activity
+94-->[com.google.android.gms:play-services-base:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/7d64a1cd2514583b2a458dd887234110/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+95-->[com.google.android.gms:play-services-base:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/7d64a1cd2514583b2a458dd887234110/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-base:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/7d64a1cd2514583b2a458dd887234110/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-base:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/7d64a1cd2514583b2a458dd887234110/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/b30aa8f2c38872540ef1352302c9199c/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/b30aa8f2c38872540ef1352302c9199c/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.6.0] /Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/b30aa8f2c38872540ef1352302c9199c/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+102    </application>
+103
+104</manifest>
