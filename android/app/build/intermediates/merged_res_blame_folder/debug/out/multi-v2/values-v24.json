@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Shubhangi\\Desktop\\try\\paysplit original\\paysplit\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "/Users/aakashkumar/Desktop/paysplit/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\ae1b2855b0c2c0b48dde672012ba9332\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/ae1b2855b0c2c0b48dde672012ba9332/appcompat-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\e0593a1f5f743bf2af65c331020fb61e\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/aakashkumar/.gradle/caches/transforms-2/files-2.1/e0593a1f5f743bf2af65c331020fb61e/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
