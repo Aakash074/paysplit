@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { Button, View, TextInput } from 'react-native';
+import React, { useState } from 'react';
+import { Button, View, TextInput, Text } from 'react-native';
 export default function SettingsScreen({ navigation }) {
     const [inputCounter, setinputCounter] = useState(0)
     return (
