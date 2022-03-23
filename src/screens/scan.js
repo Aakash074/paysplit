@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { TouchableOpacity, Text, Linking, View, Image, ImageBackground, BackHandler } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import styles from './scanStyle'
+import WalletScreen from './WalletScreen'
 class scan extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +13,8 @@ class scan extends Component {
         };
     }
 onSuccess = (e) => {
-        const check = e.data.substring(0, 4);
+    const check = e.data.substring(0, 4);
+    
         console.log('scanned data' + check);
         this.setState({
             result: e,
@@ -35,17 +37,18 @@ activeQR = () => {
     scanAgain = () => {
         this.setState({ scan: true, ScanResult: false })
     }
+
+   
+
+
 render() {
-        const { scan, ScanResult, result } = this.state
+    const { scan, ScanResult, result } = this.state
+    if(ScanResult) return <WalletScreen />
+    
         return (
             <View style={styles.scrollViewStyle}>
                 <Fragment>
-                    <View style={styles.header}>
-                        <TouchableOpacity onPress={()=> BackHandler.exitApp()}>
-                            <Image source={require('./assets/back.png')} style={{height: 36, width: 36}}></Image>
-                        </TouchableOpacity>
-                        <Text style={styles.textTitle}>Scan QR Code</Text>
-                    </View>
+                    
                     {!scan && !ScanResult &&
                         <View style={styles.cardView} >
                             <Image source={require('./assets/camera.png')} style={{height: 36, width: 36}}></Image>
