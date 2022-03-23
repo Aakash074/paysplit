@@ -7,6 +7,7 @@ local.properties
 
 # Node
 node_modules
+package-lock.json
 *.log
 .nvm
 /bots/node_modules/

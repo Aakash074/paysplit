@@ -14,16 +14,17 @@ export default function HomeStack({navigation}) {
     <Stack.Navigator>
       <Stack.Screen
         name="SplitPay"
-        component={QRcode}
+        component={HomeScreen}
         options={({ navigation }) => ({
           
           // headerLeft: () => <IconButton icon="menu" size={22} />,
           headerRight: () => (
-            <IconButton icon={() => <Icon name="qr-code-outline" size={22} onPress={()=>{ auth().signOut().then(() => console.log('User signed out!'))}} title="Log out"></Icon>} />
+            <IconButton icon={() => <Icon name="qr-code-outline" size={22} onPress={()=> navigation.navigate('QRcode')} title="Log out"></Icon>} />
           ),
         })}
       />
       <Stack.Screen name="AddRoom" component={AddRoomScreen} />
+      <Stack.Screen name="QRcode" component={QRcode} />
     </Stack.Navigator>
   );
 }
