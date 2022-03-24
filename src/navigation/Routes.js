@@ -4,6 +4,8 @@ import AuthStack from './AuthStack';
 import HomeStack from './HomeStack';
 import auth from '@react-native-firebase/auth';
 import TabNavigator from './TabNavigator';
+import firebase from '@react-native-firebase/app';
+
 export default function Routes() {
 
     // Set an initializing state whilst Firebase connects
@@ -20,7 +22,14 @@ export default function Routes() {
       const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
       return subscriber; // unsubscribe on unmount
     }, []);
-  
+    
+    useEffect(() => {
+      messaging()
+        .getToken(firebase.app().options.messagingSenderId)
+        .then(x => console.log(x))
+        .catch(e => console.log(e));
+    }, []);
+    
     if (initializing) return null;
   
     

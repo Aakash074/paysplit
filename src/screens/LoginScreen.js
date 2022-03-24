@@ -4,7 +4,17 @@ import auth from '@react-native-firebase/auth';
 import { View , Text} from "react-native"
 import {navigation} from "@react-navigation"
 import HomeStack from '../navigation/HomeStack';
+import firebase from '@react-native-firebase/app';
+import messaging from '@react-native-firebase/messaging';
+
 export default function PhoneSignIn() {
+  useEffect(() => {
+    messaging()
+      .getToken(firebase.app().options.messagingSenderId)
+      .then(x => console.log(x))
+      .catch(e => console.log(e));
+  }, []);
+
   // If null, no SMS has been sent
   const [confirm, setConfirm] = useState(null);
 

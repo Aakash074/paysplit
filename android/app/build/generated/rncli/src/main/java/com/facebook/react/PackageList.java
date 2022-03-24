@@ -19,6 +19,8 @@ import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
 // @react-native-picker/picker
 import com.reactnativecommunity.picker.RNCPickerPackage;
+// @react-native-firebase/messaging
+import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-contacts
@@ -84,6 +86,7 @@ public class PackageList {
       new ReactNativeFirebaseAppPackage(),
       new ReactNativeFirebaseAuthPackage(),
       new RNCPickerPackage(),
+      new ReactNativeFirebaseMessagingPackage(),
       new RNCameraPackage(),
       new ReactNativeContacts(),
       new RNGestureHandlerPackage(),

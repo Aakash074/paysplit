@@ -7,7 +7,7 @@ class scan extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            scan: false,
+            scan: true,
             ScanResult: false,
             result: null
         };
@@ -92,11 +92,11 @@ render() {
                             bottomContent={
                                 <View>
                                     <ImageBackground source={require('./assets/bottom-panel.png')} style={styles.bottomContent}>
-                                        <TouchableOpacity style={styles.buttonScan2} 
+                                        {/* <TouchableOpacity style={styles.buttonScan2} 
                                             onPress={() => this.scanner.reactivate()} 
                                             onLongPress={() => this.setState({ scan: false })}>
                                             <Image source={require('./assets/camera2.png')}></Image>
-                                        </TouchableOpacity>
+                                        </TouchableOpacity> */}
                                     </ImageBackground>
                                 </View>
                             }
