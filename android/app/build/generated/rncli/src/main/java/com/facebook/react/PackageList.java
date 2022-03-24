@@ -17,6 +17,8 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @react-native-firebase/auth
 import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// @react-native-firebase/messaging
+import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-contacts
@@ -81,6 +83,7 @@ public class PackageList {
       new RNCMaskedViewPackage(),
       new ReactNativeFirebaseAppPackage(),
       new ReactNativeFirebaseAuthPackage(),
+      new ReactNativeFirebaseMessagingPackage(),
       new RNCameraPackage(),
       new ReactNativeContacts(),
       new RNGestureHandlerPackage(),

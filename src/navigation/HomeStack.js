@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {IconButton} from 'react-native-paper';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
@@ -7,9 +7,12 @@ import UPIpay from '../screens/UPIpay';
 import AddRoomScreen from '../screens/AddRoomScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 import auth from '@react-native-firebase/auth';
+
 const Stack = createStackNavigator();
 
 export default function HomeStack({navigation}) {
+  
+
   return (
     <Stack.Navigator>
       <Stack.Screen
