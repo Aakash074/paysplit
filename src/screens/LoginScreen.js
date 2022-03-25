@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, TextInput } from 'react-native';
 import auth from '@react-native-firebase/auth';
 import { View , Text} from "react-native"
@@ -6,18 +6,16 @@ import {navigation} from "@react-navigation"
 import HomeStack from '../navigation/HomeStack';
 import firebase from '@react-native-firebase/app';
 import messaging from '@react-native-firebase/messaging';
-
+// import { database } from 'firebase';
+import firestore from '@react-native-firebase/firestore';
 export default function PhoneSignIn() {
   useEffect(() => {
-    messaging()
-      .getToken(firebase.app().options.messagingSenderId)
-      .then(x => console.log(x))
-      .catch(e => console.log(e));
+    
   }, []);
 
   // If null, no SMS has been sent
   const [confirm, setConfirm] = useState(null);
-
+  const [token, setToken] = useState('')
   const [code, setCode] = useState('');
   const [phone, setPhone] = useState('')
   const [codeconfirm, setcodeconfirm] = useState(null)
@@ -43,7 +41,28 @@ export default function PhoneSignIn() {
      <TextInput value={phone} onChangeText={text => setPhone(text)} />
       <Button
         title="Phone Number Sign In"
-        onPress={() => signInWithPhoneNumber('+91'+phone)}
+          onPress={() => {
+            signInWithPhoneNumber('+91' + phone)
+            messaging()
+            .getToken(firebase.app().options.messagingSenderId)
+            .then(token => {
+              console.log(token)
+              // setToken(token)
+              firestore()
+                  .collection('tokens')
+                  .doc('token-phn')
+                  .set({
+                    token: token,
+                    phoneNumber: phone,
+                  })
+                  .then(() => {
+                    console.log('User added!');
+                  });
+            })
+            .catch(e => console.log(e));
+            
+            
+          }}
         />
         </View>
     );

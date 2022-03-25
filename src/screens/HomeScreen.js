@@ -1,9 +1,10 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Button} from 'react-native';
 import FormButton from '../components/FormButton';
 import Fab from '../components/Fab';
-
-export default function HomeScreen({navigation}) {
+import auth from "@react-native-firebase/auth"
+export default function HomeScreen({ navigation }) {
+  console.log(navigation)
   return (
     <View style={styles.container}>
       <FormButton
@@ -12,7 +13,8 @@ export default function HomeScreen({navigation}) {
         title="Add Shared Wallet"
         onPress={() => navigation.navigate('AddRoom')}
       />
-      <Fab />
+      <Button onPress={()=>{ auth().signOut().then(() => console.log('User signed out!'))}} title="Log out"/>
+      <Fab label="Quick Payment" />
     </View>
   );
 }

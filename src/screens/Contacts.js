@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import RNMultiSelect, { IMultiSelectDataTypes, } from '@freakycoder/react-native-multiple-select';
 const Contact = ({contact}) => {
   return (
     <View style={styles.contactCon}>

@@ -1,10 +1,11 @@
 import React, {Component, useEffect, useState} from 'react';
-import {FlatList, View, Text, StyleSheet, PermissionsAndroid} from 'react-native';
+import {FlatList, View, Text, StyleSheet, FAB, Button} from 'react-native';
 import Contacts from 'react-native-contacts';
 import Contact from './Contacts';
 import MultiSelect from 'react-native-multiple-select';
-
-export default class WalletScreen extends Component{
+import PaymentConfirmScreen from '../screens/PaymentConfirmScreen'
+import { useNavigation } from '@react-navigation/native';
+class WalletScreenclass extends React.Component{
 
   constructor(props) {
     super(props)
@@ -57,6 +58,7 @@ export default class WalletScreen extends Component{
 
   componentDidMount() {
     this.fetchcontacts()
+    console.log(JSON.stringify(this.props) + "  navv22")
   }
 
 
@@ -74,9 +76,10 @@ export default class WalletScreen extends Component{
     this.setState({
       contacts : this.state.contacts,
       selectedItems: selectedItems,
-  
-
     });
+
+   
+
   };
 
 
@@ -93,9 +96,10 @@ export default class WalletScreen extends Component{
 
   render() {
     
- 
+    const {navigation} = this.props
+    console.log(navigation + "nav")
     const { selectedItems } = this.state;
-    console.log(this.state.contactsarr + "ssssssssssss")
+    console.log(JSON.stringify(this.props) + "ssssssssssss")
     return (
       <View style={{ flex: 1 }}>
         <MultiSelect
@@ -120,7 +124,15 @@ export default class WalletScreen extends Component{
           submitButtonColor="#CCC"
           submitButtonText="Submit"
         />
-      
+          {/* <FAB
+        style={styles.fab}
+        uppercase={false}
+        label="click here"
+        icon="plus" onPress={() => 
+          navigation.navigate('PaymentConfirmScreen')
+        }/> */}
+
+        <Button title="click me" onPress={()=>navigation.navigate('PaymentConfirmScreen')}></Button>
       </View>
     );
   }
@@ -130,3 +142,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+
+export default function Fab({}) {
+
+  const navigation = useNavigation();
+  return (
+   <WalletScreenclass navigation={navigation} />
+  );
+}
+
+

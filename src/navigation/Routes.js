@@ -5,6 +5,7 @@ import HomeStack from './HomeStack';
 import auth from '@react-native-firebase/auth';
 import TabNavigator from './TabNavigator';
 import firebase from '@react-native-firebase/app';
+import messaging from '@react-native-firebase/messaging';
 
 export default function Routes() {
 

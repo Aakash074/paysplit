@@ -7,7 +7,8 @@ import UPIpay from '../screens/UPIpay';
 import AddRoomScreen from '../screens/AddRoomScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 import auth from '@react-native-firebase/auth';
-
+import PaymentConfirmScreen from '../screens/PaymentConfirmScreen'
+import WalletScreen from '../screens/WalletScreen'
 const Stack = createStackNavigator();
 
 export default function HomeStack({navigation}) {
@@ -28,6 +29,8 @@ export default function HomeStack({navigation}) {
       />
       <Stack.Screen name="AddRoom" component={AddRoomScreen} />
       <Stack.Screen name="QRcode" component={QRcode} />
+      <Stack.Screen name="Wallet" component={WalletScreen} />
+      <Stack.Screen name="PaymentConfirmScreen" component={PaymentConfirmScreen} />
     </Stack.Navigator>
   );
 }

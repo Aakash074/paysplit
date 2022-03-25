@@ -2,14 +2,16 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {FAB} from 'react-native-paper';
 
-export default function Fab() {
+export default function Fab({label,navigation}) {
   return (
     <FAB
       style={styles.fab}
       uppercase={false}
-      label="Quick Payment"
+      label={label}
       icon="plus"
-      onPress={() => console.log('Pressed')}
+      onPress={() => 
+        navigation.navigate('PaymentConfirmScreen')
+      }
     />
   );
 }

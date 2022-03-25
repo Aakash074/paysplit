@@ -5,7 +5,7 @@ import auth from '@react-native-firebase/auth';
 const QRcode = () => {
   return  <Scan />
     // <View>
-      {/* <Button onPress={()=>{ auth().signOut().then(() => console.log('User signed out!'))}} title="Log out"/> */}
+    
      
     // </View>
    
