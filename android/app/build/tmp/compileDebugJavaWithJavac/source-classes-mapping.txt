@@ -1,8 +1,7 @@
 com/splitpay/MainActivity.java
  com.splitpay.MainActivity
-com/splitpay/MainApplication.java
- com.splitpay.MainApplication
- com.splitpay.MainApplication$1
+com/splitpay/BuildConfig.java
+ com.splitpay.BuildConfig
 com/splitpay/ReactNativeFlipper.java
  com.splitpay.ReactNativeFlipper
  com.splitpay.ReactNativeFlipper$1
@@ -10,5 +9,6 @@ com/splitpay/ReactNativeFlipper.java
  com.splitpay.ReactNativeFlipper$2$1
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
-com/splitpay/BuildConfig.java
- com.splitpay.BuildConfig
+com/splitpay/MainApplication.java
+ com.splitpay.MainApplication
+ com.splitpay.MainApplication$1

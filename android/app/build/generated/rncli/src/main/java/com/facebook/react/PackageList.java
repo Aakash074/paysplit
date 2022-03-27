@@ -25,6 +25,8 @@ import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 import org.reactnative.camera.RNCameraPackage;
 // react-native-contacts
 import com.rt2zz.reactnativecontacts.ReactNativeContacts;
+// react-native-firebase
+import io.invertase.firebase.RNFirebasePackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-safe-area-context
@@ -87,6 +89,7 @@ public class PackageList {
       new ReactNativeFirebaseMessagingPackage(),
       new RNCameraPackage(),
       new ReactNativeContacts(),
+      new RNFirebasePackage(),
       new RNGestureHandlerPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

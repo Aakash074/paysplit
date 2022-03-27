@@ -18,6 +18,7 @@ MERGED from [com.google.android.gms:play-services-safetynet:18.0.1] C:\Users\Shu
 MERGED from [:react-native-community_masked-view] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-contacts] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-contacts\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-gesture-handler] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -153,6 +154,8 @@ MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\pa
 MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c9fdbe9988036e2a3b043908f619cdb0\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:14:5-67
@@ -207,6 +210,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradl
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\8dc7210e9b0f01fe1f9fdb52c4494a5c\jetified-play-services-safetynet-18.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\8dc7210e9b0f01fe1f9fdb52c4494a5c\jetified-play-services-safetynet-18.0.1\AndroidManifest.xml:22:5-20
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-21:19
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-21:19
 MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\211c4d7460bebcded6694ba81e5368cf\jetified-react-native-0.64.2\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\211c4d7460bebcded6694ba81e5368cf\jetified-react-native-0.64.2\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c5db1df06141195983fa92a2ae90d1d4\jetified-play-services-mlkit-barcode-scanning-16.2.0\AndroidManifest.xml:8:5-16:19
@@ -351,6 +356,8 @@ MERGED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit origi
 MERGED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-contacts] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-contacts\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-contacts] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-contacts\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-safe-area-context] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -585,6 +592,8 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-firebase_auth] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\auth\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
 MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
 MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\22b888d8af699c4c16d5013f42eb6626\jetified-play-services-measurement-api-20.1.0\AndroidManifest.xml:24:5-68
@@ -605,6 +614,8 @@ MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\pa
 MERGED from [:react-native-firebase_messaging] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
@@ -687,6 +698,8 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:react-native-firebase_app] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\10bd4f28f7af697f4e9bb5bbf61d7281\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
+MERGED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
 MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\29c5673bc47885ea14d02ece37658da4\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
@@ -803,6 +816,12 @@ ADDED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit origin
 		ADDED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:16:9-33
 	android:name
 		ADDED from [:react-native-camera] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:15:9-57
+meta-data#com.google.firebase.components:io.invertase.firebase.ReactNativeFirebaseAppRegistrar
+ADDED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [:react-native-firebase] C:\Users\Shubhangi\Desktop\try\paysplit original\paysplit\node_modules\react-native-firebase\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-116
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
 ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\c5db1df06141195983fa92a2ae90d1d4\jetified-play-services-mlkit-barcode-scanning-16.2.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.android.gms:play-services-mlkit-face-detection:16.2.0] C:\Users\Shubhangi\.gradle\caches\transforms-2\files-2.1\0d5246ac7a3d6841c704f8be70d0870c\jetified-play-services-mlkit-face-detection-16.2.0\AndroidManifest.xml:9:9-15:19

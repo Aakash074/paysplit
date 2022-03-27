@@ -5,7 +5,6 @@ import FormButton from '../components/FormButton';
 export default function AddRoomScreen({ navigation }) {
   useEffect(() => {
     
-    console.log(JSON.stringify(navigation)+" navvvvv")
  
   })
   

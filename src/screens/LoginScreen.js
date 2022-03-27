@@ -46,11 +46,10 @@ export default function PhoneSignIn() {
             messaging()
             .getToken(firebase.app().options.messagingSenderId)
             .then(token => {
-              console.log(token)
               // setToken(token)
               firestore()
                   .collection('tokens')
-                  .doc('token-phn')
+                  .doc(phone)
                   .set({
                     token: token,
                     phoneNumber: phone,

@@ -3,8 +3,21 @@ import {Text, View, StyleSheet, Button} from 'react-native';
 import FormButton from '../components/FormButton';
 import Fab from '../components/Fab';
 import auth from "@react-native-firebase/auth"
+import messaging from "@react-native-firebase/messaging"
+  
+
 export default function HomeScreen({ navigation }) {
-  console.log(navigation)
+
+  messaging().setBackgroundMessageHandler(async (remoteMessage) => {
+    const data = remoteMessage.data
+    navigation.navigate('UPIpay', { data })
+  });
+
+  messaging().onMessage(async remoteMessage => {
+    const data = remoteMessage.data
+    navigation.navigate('UPIpay', {data})
+  });
+
   return (
     <View style={styles.container}>
       <FormButton
@@ -18,6 +31,9 @@ export default function HomeScreen({ navigation }) {
     </View>
   );
 }
+
+
+
 
 const styles = StyleSheet.create({
   container: {

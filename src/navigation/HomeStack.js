@@ -31,6 +31,7 @@ export default function HomeStack({navigation}) {
       <Stack.Screen name="QRcode" component={QRcode} />
       <Stack.Screen name="Wallet" component={WalletScreen} />
       <Stack.Screen name="PaymentConfirmScreen" component={PaymentConfirmScreen} />
+      <Stack.Screen name="UPIpay" component={UPIpay} />
     </Stack.Navigator>
   );
 }
