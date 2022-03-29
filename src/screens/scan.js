@@ -43,7 +43,8 @@ activeQR = () => {
 
 render() {
     const { scan, ScanResult, result } = this.state
-    if(ScanResult) return <WalletScreen />
+    // if(ScanResult) return <WalletScreen />
+    if(ScanResult) console.log(ScanResult)
     
         return (
             <View style={styles.scrollViewStyle}>
