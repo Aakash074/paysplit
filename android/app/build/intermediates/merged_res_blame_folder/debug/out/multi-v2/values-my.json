@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Shubhangi\\Desktop\\try\\paysplit original\\paysplit\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\549f9dcdb78ce75461d3b02a2021397c\\core-1.5.0\\res\\values-my\\values-my.xml",
+                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\a4a010e99880a4d81ee6a7ed3ad8449a\\core-1.2.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

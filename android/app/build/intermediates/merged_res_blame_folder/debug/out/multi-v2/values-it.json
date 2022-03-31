@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\a4a010e99880a4d81ee6a7ed3ad8449a\\core-1.2.0\\res\\values-it\\values-it.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "5176",
+                        "endColumns": "100",
+                        "endOffsets": "5272"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\a56e3d53fd5d36e5f52666c5a0543711\\jetified-firebase-messaging-23.0.0\\res\\values-it\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,23 +86,6 @@
                         "startOffsets": "2799,2904,3055,3180,3288,3446,3574,3694,3934,4091,4198,4352,4479,4635,4816,4883,4944",
                         "endColumns": "104,150,124,107,157,127,119,103,156,106,153,126,155,180,66,60,76",
                         "endOffsets": "2899,3050,3175,3283,3441,3569,3689,3793,4086,4193,4347,4474,4630,4811,4878,4939,5016"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Shubhangi\\.gradle\\caches\\transforms-2\\files-2.1\\549f9dcdb78ce75461d3b02a2021397c\\core-1.5.0\\res\\values-it\\values-it.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "49",
-                        "startColumns": "4",
-                        "startOffsets": "5176",
-                        "endColumns": "100",
-                        "endOffsets": "5272"
                     }
                 }
             ]

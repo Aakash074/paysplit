@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import AuthStack from './AuthStack';
-import HomeStack from './HomeStack';
 import auth from '@react-native-firebase/auth';
 import TabNavigator from './TabNavigator';
 import firebase from '@react-native-firebase/app';

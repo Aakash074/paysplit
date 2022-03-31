@@ -4,7 +4,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import QRcode from '../screens/QRcode';
 import UPIpay from '../screens/UPIpay';
-import AddRoomScreen from '../screens/AddRoomScreen';
 import PaymentConfirmScreen from '../screens/PaymentConfirmScreen'
 import WalletScreen from '../screens/WalletScreen'
 const Stack = createStackNavigator();
@@ -14,7 +13,7 @@ export default function HomeStack({navigation}) {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="SplitPay"
         component={HomeScreen}
         options={({ navigation }) => ({
@@ -24,12 +23,11 @@ export default function HomeStack({navigation}) {
           //   <IconButton icon={() => <Icon name="qr-code-outline" size={22} onPress={()=> navigation.navigate('QRcode')} title="Log out"></Icon>} />
           // ),
         })}
-      />
-      <Stack.Screen name="AddRoom" component={AddRoomScreen} />
+      /> */}
       <Stack.Screen name="QRcode" component={QRcode} />
       <Stack.Screen name="Wallet" component={WalletScreen} />
-      <Stack.Screen name="PaymentConfirmScreen" component={PaymentConfirmScreen} />
       <Stack.Screen name="UPIpay" component={UPIpay} />
+      <Stack.Screen name="PaymentConfirmScreen" component={PaymentConfirmScreen} />
     </Stack.Navigator>
   );
 }

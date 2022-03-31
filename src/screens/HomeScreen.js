@@ -5,7 +5,7 @@ import Fab from '../components/Fab';
 import auth from "@react-native-firebase/auth"
 import messaging from "@react-native-firebase/messaging"
 import axios from 'axios';  
-
+import {MaterialCommunityIcons} from "@expo/vector-icons"
 export default function HomeScreen({ navigation }) {
 
 
@@ -13,24 +13,21 @@ export default function HomeScreen({ navigation }) {
 
   messaging().setBackgroundMessageHandler(async (remoteMessage) => {
     const data = remoteMessage.data
-    navigation.navigate('UPIpay', { data })
+    // navigation.navigate('UPIpay', { data })
+    console.log(JSON.stringify(data.uri)+"console 111")
+    navigation.navigate('UPIpay', { uri:data.uri })
   });
   messaging().onMessage(async remoteMessage => {
     const data = remoteMessage.data
-    navigation.navigate('UPIpay', {data})
+    navigation.navigate('UPIpay', {uri:data.uri})
   });
-  function removeDuplicateObjectFromArray(array, key) {
-    var check = new Set();
-    return array.filter((obj) => !check.has(obj[key]) && check.add(obj[key]));
-  }
-  
 
   
 
 
   return (
     <View style={styles.container}>
-      <FormButton
+      {/* <FormButton
         modeValue="contained"
         icon="plus"
         title="Add Shared Wallet"
@@ -38,9 +35,10 @@ export default function HomeScreen({ navigation }) {
           navigation.navigate('Wallet')
           // postExample()
         }
-      />
-      <Button onPress={()=>{ auth().signOut().then(() => console.log('User signed out!'))}} title="Log out"/>
-      <Fab label="Quick Payment" />
+      /> */}
+      
+     
+      {/* <Fab label="Quick Payment" /> */}
     </View>
   );
 }

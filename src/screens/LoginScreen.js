@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Button, TextInput } from 'react-native';
+import {StyleSheet} from 'react-native'
+import { TextInput, Button, Flex, Text } from "@react-native-material/core";
 import auth from '@react-native-firebase/auth';
-import { View , Text} from "react-native"
+import { View } from "react-native"
 import {navigation} from "@react-navigation"
-import HomeStack from '../navigation/HomeStack';
 import firebase from '@react-native-firebase/app';
 import messaging from '@react-native-firebase/messaging';
+import { Stack, ActivityIndicator } from "@react-native-material/core";
 // import { database } from 'firebase';
 import firestore from '@react-native-firebase/firestore';
 export default function PhoneSignIn() {
+  const [Loading, setLoading] = useState(false)
   useEffect(() => {
     
   }, []);
 
   // If null, no SMS has been sent
-  const [confirm, setConfirm] = useState(null);
+  const [confirm, setConfirm] = useState(false);
   const [token, setToken] = useState('')
   const [code, setCode] = useState('');
   const [phone, setPhone] = useState('')
@@ -37,11 +39,14 @@ export default function PhoneSignIn() {
 
   if (!confirm) {
     return (
-      <View>
-     <TextInput value={phone} onChangeText={text => setPhone(text)} />
-      <Button
-        title="Phone Number Sign In"
+      <View style={styles.scene}>
+     <TextInput value={phone} onChangeText={text => setPhone(text)} variant="outlined" label="Phone Number"  keyboardType="numeric" />
+        <Button
+          // style={ }
+          disabled={Loading}
+        title={Loading?<ActivityIndicator color="#00ff00"/>: "Log in"}
           onPress={() => {
+            setLoading(true)
             signInWithPhoneNumber('+91' + phone)
             messaging()
             .getToken(firebase.app().options.messagingSenderId)
@@ -56,6 +61,8 @@ export default function PhoneSignIn() {
                   })
                   .then(() => {
                     console.log('User added!');
+    setLoading(false)
+
                   });
             })
             .catch(e => console.log(e));
@@ -63,16 +70,26 @@ export default function PhoneSignIn() {
             
           }}
         />
-        </View>
+      </View>
     );
   }
-  if (codeconfirm)
-    return <View><Text>Login Success</Text></View>
+
   
   return (
     <>
-      <TextInput value={code} onChangeText={text => setCode(text)} />
+      <TextInput value={code} onChangeText={text => setCode(text)} titile="OTP"/>
       <Button title="Confirm Code" onPress={() => confirmCode()} />
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  scene: {
+    margin: "5%",
+    justifyContent: "center"
+  },
+  btn: {
+    
+  }
+  
+});
