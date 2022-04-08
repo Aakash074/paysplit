@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-export default function PaymentConfirmScreen() {
+export default function PaymentConfirmScreen(props) {
+  console.log(props.route.params.data)
   return (
     
-      <View><Text>Payment confirm screen</Text></View>
+    <View><Text>{props.route.params.data}</Text></View>
   );
 }
 

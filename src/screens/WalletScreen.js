@@ -1,38 +1,43 @@
 import React, { Component, useEffect, useState } from "react";
 import {
-  TextInput,
+  
   View,
   Text,
   StyleSheet,
   Button,
   ScrollView,
 } from "react-native";
+import firestore from '@react-native-firebase/firestore';
+import auth from '@react-native-firebase/auth';
 import CheckBox from "@react-native-community/checkbox";
 import { FAB } from "react-native-paper";
-import { Stack, ActivityIndicator } from "@react-native-material/core";
-
+import { Stack, ActivityIndicator, TextInput } from "@react-native-material/core";
+import ErrorScreen from "./ErrorScreen"
 import Contacts from "react-native-contacts";
 import { useNavigation } from "@react-navigation/native";
 import axios from "axios";
-function WalletScreen({ ScanResult }) {
+function WalletScreen(props) {
   const navigation = useNavigation();
   const [contacts, setcontacts] = useState([]);
   const [data, setdata] = useState([]);
   const [selectedContacts, setselectedContacts] = useState([]);
   const [Amount, setAmount] = useState("");
   const [Loading , setLoading ] = useState(true)
-
+const [err, seterr] = useState(false)
   useEffect(() => {
     
   fetchContacts()
     
-  },[])
+  }, [])
   
 
+  
+
+console.log(JSON.stringify(props.route.params.data))
   function sendPaymentNotification() {
     const numsData = {
       numbers: selectedContacts,
-      uri: ScanResult.data + `&am=${Amount / (selectedContacts.length+1)}`,
+      uri: props.route.params.data + `&am=${Amount / (selectedContacts.length+1)}`,
     };
     axios
       .post(
@@ -45,11 +50,14 @@ function WalletScreen({ ScanResult }) {
           },
         }
       )
-      .then(
+      .then(() => {
+        // pushTransactionToFirebase()
+        console.log(props.route.params + "paramsss")
+        console.log(selectedContacts)
         navigation.navigate("UPIpay", {
-          ScanResult: ScanResult,
+          ScanResult: props.route.params.data,
           Amount: Amount/(selectedContacts.length+1),
-        })
+        })}
       );
   }
 
@@ -58,6 +66,7 @@ function WalletScreen({ ScanResult }) {
     return array.filter((obj) => !check.has(obj[key]) && check.add(obj[key]));
   }
 
+ 
   async function makingContactObj(contacts) {
     const realContacts = [];
     for (let i = 0; i < contacts.length; i++) {
@@ -111,15 +120,20 @@ function WalletScreen({ ScanResult }) {
       .then((res) => {
         setLoading(false)
         setdata(res.data)
+      }).catch(err => {
+        console.log(err)
+        seterr(true)
       });
   };
+
+  if (err) navigation.navigate('ErrorScreen')
 
   if (Loading)
     return <View><ActivityIndicator color="#00ff00" size="large" /><Text>Fetching Contacts</Text></View>
 
   return (
     <View>
-      <TextInput value={Amount} onChangeText={(text) => setAmount(text)} />
+      <TextInput title="Amount"  keyboardType="numeric" value={Amount} onChangeText={(text) => setAmount(text)} />
       {/* <Button
         onPress={() => {
           fetchContacts();
@@ -131,16 +145,22 @@ function WalletScreen({ ScanResult }) {
         {data.map(({ phone, name }) => (
           <View key={phone} style={{ display: "flex", flexDirection: "row" }}>
             <CheckBox
+              title={name}
               disabled={false}
               value={
                 selectedContacts.find((number) => number == phone)
                   ? true
                   : false
               }
-              onValueChange={() =>
+              onValueChange={() => {
+                console.log("selected")
+                console.log(selectedContacts.length)
                 selectedContacts.find((number) => number == phone) ?
                   setselectedContacts(selectedContacts.filter((number) => number != phone))
                   : setselectedContacts([...selectedContacts, phone])
+                console.log(selectedContacts.length)
+              }
+                
               }
             />
             <Text>{name}</Text>

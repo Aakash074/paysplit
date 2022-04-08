@@ -3,12 +3,16 @@ import {StyleSheet} from 'react-native'
 import { TextInput, Button, Flex, Text } from "@react-native-material/core";
 import auth from '@react-native-firebase/auth';
 import { View } from "react-native"
-import {navigation} from "@react-navigation"
 import firebase from '@react-native-firebase/app';
 import messaging from '@react-native-firebase/messaging';
 import { Stack, ActivityIndicator } from "@react-native-material/core";
 // import { database } from 'firebase';
+import OTPScreen from "./OTPScreen"
+import { Dimensions, KeyboardAvoidingView } from 'react-native';
+const deviceWidth = Dimensions.get('screen').width;
+const deviceHeight = Dimensions.get('screen').height;
 import firestore from '@react-native-firebase/firestore';
+import { ScrollView } from 'react-native-gesture-handler';
 export default function PhoneSignIn() {
   const [Loading, setLoading] = useState(false)
   useEffect(() => {
@@ -25,6 +29,9 @@ export default function PhoneSignIn() {
   async function signInWithPhoneNumber(phoneNumber) {
     const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
     setConfirm(confirmation);
+    if (confirm) {
+      setLoading(false)
+    }
   }
 
   async function confirmCode() {
@@ -40,7 +47,16 @@ export default function PhoneSignIn() {
   if (!confirm) {
     return (
       <View style={styles.scene}>
-     <TextInput value={phone} onChangeText={text => setPhone(text)} variant="outlined" label="Phone Number"  keyboardType="numeric" />
+        <ScrollView>
+          <KeyboardAvoidingView enabled >
+            <TextInput style={{ marginTop: deviceHeight / 3.5 }} value={phone}
+              onChangeText={text => {
+                if(phone.length>10) return
+                setLoading(false)
+                setPhone(text)
+              }} variant="outlined" label="Phone Number" keyboardType="numeric"
+        returnKeyType='done'
+            />
         <Button
           // style={ }
           disabled={Loading}
@@ -54,33 +70,31 @@ export default function PhoneSignIn() {
               // setToken(token)
               firestore()
                   .collection('tokens')
-                  .doc(phone)
+                  .doc("+91"+phone)
                   .set({
                     token: token,
-                    phoneNumber: phone,
+                    phoneNumber: "+91"+phone,
                   })
                   .then(() => {
                     console.log('User added!');
-    setLoading(false)
-
+//check if the user already exists, if user doesn't exist then add 
                   });
             })
             .catch(e => console.log(e));
             
             
           }}
-        />
+            />
+            </KeyboardAvoidingView>
+          </ScrollView>
       </View>
     );
   }
 
-  
   return (
-    <>
-      <TextInput value={code} onChangeText={text => setCode(text)} titile="OTP"/>
-      <Button title="Confirm Code" onPress={() => confirmCode()} />
-    </>
-  );
+    <OTPScreen confirm={confirm }/>
+  )
+  
 }
 
 const styles = StyleSheet.create({

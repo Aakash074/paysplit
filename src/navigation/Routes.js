@@ -5,7 +5,8 @@ import auth from '@react-native-firebase/auth';
 import TabNavigator from './TabNavigator';
 import firebase from '@react-native-firebase/app';
 import messaging from '@react-native-firebase/messaging';
-
+import {navigationRef} from './RootNavigation';
+import SplashScreen from '../screens/SplashScreen';
 export default function Routes() {
 
     // Set an initializing state whilst Firebase connects
@@ -28,14 +29,25 @@ export default function Routes() {
         .getToken(firebase.app().options.messagingSenderId)
         .then(x => console.log(x))
         .catch(e => console.log(e));
+      
+        // createNotificationLnrs();
     }, []);
     
     if (initializing) return null;
   
     
-  return (
     
-      user ? <TabNavigator /> : <AuthStack />  
-  
+  return (<NavigationContainer ref={navigationRef}>{user ? <TabNavigator /> : <AuthStack />  }</NavigationContainer>
+    
   );
 }
+//
+{/* <App>
+  <Provider>
+    <Routes>
+      <NavigationContainer> 
+        <TabNavigator/>
+      </NavigationContainer>
+    </Routes>
+  </Provider>
+</App> */}
