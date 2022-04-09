@@ -893,6 +893,7 @@
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firebase_database_url" translatable="false">https://payapp-c0567-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="gcm_defaultSenderId" translatable="false">692469033900</string>
     <string name="google_api_key" translatable="false">AIzaSyA1Yi1V39rVYo3n3ltwDcG7odvDa7THyU8</string>
     <string name="google_app_id" translatable="false">1:692469033900:android:161127d20467736f336809</string>
